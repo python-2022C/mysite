@@ -3,16 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    HTML = """
-    <html>
-    <head>
-    <title>My App</title>
-    </head>
-    <body>
-    <h1>My App</h1>
-    <p>My App is a Django app.</p>
-    </body>
-    </html>
-    """
-    return HttpResponse(HTML)
-    # return render(request, 'home.html')
+  
+  
+    return render(request, 'home.html')
