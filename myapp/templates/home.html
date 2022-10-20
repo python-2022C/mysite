@@ -7,11 +7,9 @@
 <body>
     <h1>My App</h1>
     <p>My App is a Django app.</p>
-  {% if age > 30 %}
-    <p>you are old</p>
-  {% else %}
-    <p>you are young</p>
-  {% endif %}
+{% for item in list %}
+    <p>{{ item }}</p>
+{% endfor %}
  
     
     
